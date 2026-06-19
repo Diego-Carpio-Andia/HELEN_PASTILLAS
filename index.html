@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sanaescencia | Suplementos naturales y holísticos con acompañamiento</title>
+  <meta name="description" content="Suplementos naturales seleccionados para acompañar tu bienestar emocional, descanso, concentración y vitalidad. Orientación personalizada por psicóloga holística." />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#355E3B" />
+
+  <!-- ===== Google Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 1 · HEADER STICKY                                      -->
+  <!-- ============================================================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__mark">sana<span>escencia</span></span>
+        <span class="brand__sub">Psicología &amp; Terapias Complementarias</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <a href="#productos" class="nav__link">Destacados</a>
+        <a href="#catalogo" class="nav__link">Catálogo</a>
+        <a href="#guia" class="nav__link">Guía de elección</a>
+        <a href="#holistico" class="nav__link">Enfoque holístico</a>
+        <a href="#faq" class="nav__link">Preguntas</a>
+        <a href="https://wa.me/51947720840?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20los%20suplementos%20naturales%20y%20orientaci%C3%B3n%20para%20elegir%20el%20m%C3%A1s%20adecuado%20para%20m%C3%AD." target="_blank" rel="noopener" class="btn btn--primary btn--sm nav__cta">Comprar por WhatsApp</a>
+      </nav>
+
+      <button class="cart-toggle" id="cartToggle" aria-label="Ver carrito de compras">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-toggle__count" id="cartCount">0</span>
+      </button>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 2 · HERO                                               -->
+  <!-- ============================================================= -->
+  <section class="hero" id="inicio">
+    <!-- elementos botánicos flotantes (parallax) -->
+    <span class="leaf leaf--1" data-parallax="0.12">🌿</span>
+    <span class="leaf leaf--2" data-parallax="0.20">🍃</span>
+    <span class="leaf leaf--3" data-parallax="0.08">🌱</span>
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow fade-up">Bienestar que se acompaña desde adentro</span>
+        <h1 class="hero__title fade-up" style="--d:.1s">
+          Equilibra tu <em>mente, cuerpo y energía</em> con apoyo natural
+        </h1>
+        <p class="hero__subtitle fade-up" style="--d:.2s">
+          Suplementos seleccionados para acompañar tu bienestar emocional, descanso,
+          concentración y vitalidad desde un enfoque holístico y complementario.
+        </p>
+        <p class="hero__authority fade-up" style="--d:.3s">
+          <span class="dot"></span> Atención personalizada por psicóloga holística.
+        </p>
+
+        <div class="hero__actions fade-up" style="--d:.4s">
+          <a href="https://wa.me/51947720840?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20los%20suplementos%20naturales%20y%20orientaci%C3%B3n%20para%20elegir%20el%20m%C3%A1s%20adecuado%20para%20m%C3%AD." target="_blank" rel="noopener" class="btn btn--primary btn--glow">Comprar por WhatsApp</a>
+          <a href="#productos" class="btn btn--secondary">Ver productos</a>
+        </div>
+
+        <p class="hero__microcopy fade-up" style="--d:.5s">
+          Compra rápida, orientación personalizada y acompañamiento responsable.
+        </p>
+      </div>
+
+      <div class="hero__products">
+        <div class="hero__product hero__product--main soft-zoom">
+          <img src="relaxaplus.png" alt="RelaxaPlus suplemento natural" loading="eager" />
+        </div>
+        <div class="hero__product hero__product--a float">
+          <img src="ashwagandha.png" alt="Ashwagandha suplemento natural" loading="eager" />
+        </div>
+        <div class="hero__product hero__product--b float float--slow">
+          <img src="dormicalm.png" alt="Dormicalm suplemento natural" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 3 · BARRA DE BENEFICIOS RÁPIDOS                        -->
+  <!-- ============================================================= -->
+  <section class="benefits">
+    <div class="container benefits__grid">
+      <div class="benefit reveal">
+        <div class="benefit__icon">🤝</div>
+        <h3>Orientación personalizada</h3>
+        <p>Te ayudo a elegir según tu necesidad.</p>
+      </div>
+      <div class="benefit reveal" style="--d:.1s">
+        <div class="benefit__icon">☯️</div>
+        <h3>Enfoque holístico</h3>
+        <p>Bienestar emocional, físico y energético.</p>
+      </div>
+      <div class="benefit reveal" style="--d:.2s">
+        <div class="benefit__icon">💬</div>
+        <h3>Compra directa por WhatsApp</h3>
+        <p>Consulta rápida y atención cercana.</p>
+      </div>
+      <div class="benefit reveal" style="--d:.3s">
+        <div class="benefit__icon">🌿</div>
+        <h3>Productos naturales</h3>
+        <p>Apoyo complementario para tu rutina diaria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 4 · PROBLEMA / IDENTIFICACIÓN EMOCIONAL               -->
+  <!-- ============================================================= -->
+  <section class="emotion">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Tu momento actual</span>
+        <h2 class="section-title">¿Sientes que tu cuerpo y tu mente te están pidiendo una pausa?</h2>
+        <p class="section-lead">
+          A veces el estrés, el cansancio, la falta de sueño o la carga mental pueden afectar
+          nuestra forma de vivir el día a día. Desde un enfoque holístico, el bienestar no se
+          trabaja solo desde un lugar: se acompaña desde la mente, el cuerpo, los hábitos, la
+          respiración, el descanso y el apoyo natural adecuado.
+        </p>
+      </div>
+
+      <div class="emotion__grid">
+        <div class="emotion__card reveal">Me cuesta relajarme.</div>
+        <div class="emotion__card reveal" style="--d:.05s">No descanso como quisiera.</div>
+        <div class="emotion__card reveal" style="--d:.1s">Me siento con poca energía.</div>
+        <div class="emotion__card reveal" style="--d:.15s">Me cuesta concentrarme.</div>
+        <div class="emotion__card reveal" style="--d:.2s">Siento mucha carga mental.</div>
+        <div class="emotion__card reveal" style="--d:.25s">Busco equilibrio emocional.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 5 · PRODUCTOS DESTACADOS (CARDS PREMIUM)              -->
+  <!-- ============================================================= -->
+  <section class="products" id="productos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Nuestra selección</span>
+        <h2 class="section-title">Elige el apoyo natural que necesitas hoy</h2>
+        <p class="section-lead">Cada suplemento está orientado a una necesidad específica de bienestar.</p>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- Card 1 -->
+        <article class="product-card reveal" data-id="relaxaplus">
+          <div class="product-card__media">
+            <img class="product-image" src="relaxaplus.png" alt="RelaxaPlus" loading="lazy" />
+            <span class="product-card__caps">60 cáps.</span>
+            <span class="product-card__off">-28%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">RelaxaPlus</h3>
+            <span class="product-card__focus">Estrés, ansiedad y calma</span>
+            <p class="product-card__desc">Para personas con tensión diaria, carga mental o dificultad para relajarse.</p>
+            <ul class="product-card__list">
+              <li>Apoya la regulación del estrés.</li>
+              <li>Acompaña el equilibrio emocional.</li>
+              <li>Contribuye a la relajación.</li>
+              <li>Apoya el descanso.</li>
+              <li>Antioxidante.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 180</span>
+              <span class="price-now">S/ 130</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="relaxaplus">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="RelaxaPlus">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card reveal" style="--d:.08s" data-id="citrato">
+          <div class="product-card__media">
+            <img class="product-image" src="citrato.png" alt="Citrato de Magnesio" loading="lazy" />
+            <span class="product-card__caps">120 cáps.</span>
+            <span class="product-card__off">-29%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Citrato de Magnesio</h3>
+            <span class="product-card__focus">Energía, músculos y sistema nervioso</span>
+            <p class="product-card__desc">Para personas con cansancio, rutinas exigentes o tensión corporal.</p>
+            <ul class="product-card__list">
+              <li>Apoya la producción de energía.</li>
+              <li>Contribuye al funcionamiento muscular.</li>
+              <li>Acompaña el equilibrio nervioso.</li>
+              <li>Apoya la salud ósea y muscular.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 140</span>
+              <span class="price-now">S/ 100</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="citrato">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="Citrato de Magnesio">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card reveal" style="--d:.16s" data-id="dormicalm">
+          <div class="product-card__media">
+            <img class="product-image" src="dormicalm.png" alt="Dormicalm" loading="lazy" />
+            <span class="product-card__caps">60 cáps.</span>
+            <span class="product-card__off">-27%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Dormicalm</h3>
+            <span class="product-card__focus">Sueño, descanso y fatiga</span>
+            <p class="product-card__desc">Para personas que desean mejorar su rutina nocturna.</p>
+            <ul class="product-card__list">
+              <li>Acompaña una rutina de descanso.</li>
+              <li>Apoya el ciclo del sueño.</li>
+              <li>Contribuye a reducir la sensación de fatiga.</li>
+              <li>Ideal para desconectarse del estrés diario.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 150</span>
+              <span class="price-now">S/ 110</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="dormicalm">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="Dormicalm">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card reveal" style="--d:.24s" data-id="vitalmind">
+          <div class="product-card__media">
+            <img class="product-image" src="vitalmind.png" alt="VitalMind" loading="lazy" />
+            <span class="product-card__caps">60 cáps.</span>
+            <span class="product-card__off">-28%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">VitalMind</h3>
+            <span class="product-card__focus">Memoria, concentración y claridad mental</span>
+            <p class="product-card__desc">Para estudiantes, profesionales o personas con alta carga mental.</p>
+            <ul class="product-card__list">
+              <li>Apoya el rendimiento intelectual.</li>
+              <li>Acompaña la memoria.</li>
+              <li>Contribuye a la función cognitiva.</li>
+              <li>Apoya el sistema inmune.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 180</span>
+              <span class="price-now">S/ 130</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="vitalmind">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="VitalMind">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="product-card reveal" style="--d:.32s" data-id="ashwagandha">
+          <div class="product-card__media">
+            <img class="product-image" src="ashwagandha.png" alt="Ashwagandha" loading="lazy" />
+            <span class="product-card__caps">90 cáps.</span>
+            <span class="product-card__off">-27%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Ashwagandha</h3>
+            <span class="product-card__focus">Estrés, cortisol y equilibrio</span>
+            <p class="product-card__desc">Para personas que buscan calma, energía y regulación ante el estrés.</p>
+            <ul class="product-card__list">
+              <li>Apoya el equilibrio emocional.</li>
+              <li>Acompaña la respuesta al estrés.</li>
+              <li>Puede contribuir a la energía natural.</li>
+              <li>Apoya el descanso.</li>
+              <li>Adaptógeno tradicional.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 150</span>
+              <span class="price-now">S/ 110</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="ashwagandha">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="Ashwagandha">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="product-card reveal" style="--d:.40s" data-id="artiforte">
+          <div class="product-card__media">
+            <img class="product-image" src="artiforte.png" alt="ArtiForte+" loading="lazy" />
+            <span class="product-card__caps">90 cáps.</span>
+            <span class="product-card__off">-27%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">ArtiForte+</h3>
+            <span class="product-card__focus">Articulaciones, huesos y movilidad</span>
+            <p class="product-card__desc">Para personas activas o que buscan apoyar la salud de sus articulaciones y huesos.</p>
+            <ul class="product-card__list">
+              <li>Apoya el fortalecimiento de huesos y cartílago.</li>
+              <li>Acompaña la movilidad y flexibilidad.</li>
+              <li>Contribuye al alivio de molestias articulares.</li>
+              <li>Favorece la síntesis del colágeno.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 150</span>
+              <span class="price-now">S/ 110</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="artiforte">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="ArtiForte+">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="product-card reveal" style="--d:.48s" data-id="tiroidbalance">
+          <div class="product-card__media">
+            <img class="product-image" src="tiroidbalance.png" alt="TiroidBalance" loading="lazy" />
+            <span class="product-card__caps">60 cáps.</span>
+            <span class="product-card__off">-28%</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">TiroidBalance</h3>
+            <span class="product-card__focus">Energía, metabolismo y equilibrio hormonal</span>
+            <p class="product-card__desc">Para personas que buscan apoyar su energía, metabolismo y bienestar hormonal.</p>
+            <ul class="product-card__list">
+              <li>Apoya la energía y el metabolismo.</li>
+              <li>Acompaña el ánimo y la concentración.</li>
+              <li>Contribuye al equilibrio hormonal.</li>
+              <li>Favorece una función tiroidea saludable.</li>
+            </ul>
+            <div class="product-card__price">
+              <span class="price-before">S/ 180</span>
+              <span class="price-now">S/ 130</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="btn btn--primary btn--block js-add" data-id="tiroidbalance">Agregar al carrito</button>
+              <button class="btn btn--ghost btn--block js-seemore" data-target="TiroidBalance">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 5b · CATÁLOGO COMPLETO (dinámico)                     -->
+  <!-- ============================================================= -->
+  <section class="catalog" id="catalogo">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Nuestras gomitas</span>
+        <h2 class="section-title">Gomitas naturales para toda la familia</h2>
+        <p class="section-lead">Filtra por necesidad y arma tu pedido: todo lo que agregues se suma a tu carrito y se envía por WhatsApp.</p>
+      </div>
+
+      <div class="catalog__filters reveal" id="catalogFilters"></div>
+      <div class="catalog__grid" id="catalogGrid"></div>
+      <p class="catalog__count" id="catalogCount"></p>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 6 · PRODUCT VIEWER INTERACTIVO (TABS)                 -->
+  <!-- ============================================================= -->
+  <section class="viewer" id="viewer">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Conoce cada fórmula</span>
+        <h2 class="section-title">Explora cada suplemento</h2>
+      </div>
+
+      <div class="viewer__tabs reveal" role="tablist">
+        <button class="viewer__tab is-active" data-product="relaxaplus">RelaxaPlus</button>
+        <button class="viewer__tab" data-product="citrato">Citrato de Magnesio</button>
+        <button class="viewer__tab" data-product="dormicalm">Dormicalm</button>
+        <button class="viewer__tab" data-product="vitalmind">VitalMind</button>
+        <button class="viewer__tab" data-product="ashwagandha">Ashwagandha</button>
+        <button class="viewer__tab" data-product="artiforte">ArtiForte+</button>
+        <button class="viewer__tab" data-product="tiroidbalance">TiroidBalance</button>
+      </div>
+
+      <div class="viewer__panel reveal">
+        <div class="viewer__media">
+          <img id="viewerImg" src="relaxaplus.png" alt="Producto seleccionado" />
+        </div>
+        <div class="viewer__info">
+          <h3 id="viewerTitle">RelaxaPlus</h3>
+          <span class="viewer__focus" id="viewerFocus">Estrés, ansiedad y calma</span>
+          <p id="viewerDesc">RelaxaPlus está orientado a personas que viven con carga mental, tensión diaria o que buscan un apoyo natural para acompañar su equilibrio emocional.</p>
+          <ul id="viewerList" class="viewer__list"></ul>
+          <div class="viewer__price">
+            <span class="price-before" id="viewerBefore">S/ 180</span>
+            <span class="price-now" id="viewerNow">S/ 130</span>
+          </div>
+          <div class="viewer__actions">
+            <button id="viewerAdd" class="btn btn--primary js-add" data-id="relaxaplus">Agregar al carrito</button>
+            <a id="viewerWa" href="#" target="_blank" rel="noopener" class="btn btn--secondary">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 7 · GUÍA "NO SÉ CUÁL ELEGIR" (QUIZ)                   -->
+  <!-- ============================================================= -->
+  <section class="quiz" id="guia">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Elige con orientación, no al azar</span>
+        <h2 class="section-title">No sé cuál elegir, ¿cuál es para mí?</h2>
+        <p class="section-lead">Selecciona lo que más se parece a lo que estás sintiendo y recibe una recomendación inicial.</p>
+      </div>
+
+      <div class="quiz__chips reveal">
+        <button class="quiz-chip" data-key="estres">Estrés</button>
+        <button class="quiz-chip" data-key="ansiedad">Ansiedad</button>
+        <button class="quiz-chip" data-key="sueno">Problemas de sueño</button>
+        <button class="quiz-chip" data-key="cansancio">Cansancio</button>
+        <button class="quiz-chip" data-key="concentracion">Falta de concentración</button>
+        <button class="quiz-chip" data-key="carga">Carga mental</button>
+        <button class="quiz-chip" data-key="tension">Tensión corporal</button>
+        <button class="quiz-chip" data-key="rutina">Rutina exigente</button>
+      </div>
+
+      <div class="quiz__result reveal" id="quizResult">
+        <p class="quiz__placeholder">Elige una opción para ver tu recomendación inicial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 8 · ENFOQUE HOLÍSTICO                                 -->
+  <!-- ============================================================= -->
+  <section class="holistic" id="holistico">
+    <span class="leaf leaf--4" data-parallax="0.1">🌿</span>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Mi enfoque</span>
+        <h2 class="section-title">Un suplemento funciona mejor cuando forma parte de una rutina integral</h2>
+        <p class="section-lead">
+          Desde mi enfoque como psicóloga holística, entiendo el bienestar como una integración entre
+          mente, cuerpo, emociones, hábitos y energía. Por eso, estos suplementos no se presentan como
+          una solución aislada, sino como un apoyo complementario dentro de un proceso de autocuidado consciente.
+        </p>
+      </div>
+
+      <div class="holistic__grid">
+        <div class="pillar reveal"><span class="pillar__icon">🌬️</span><h3>Respiración consciente</h3></div>
+        <div class="pillar reveal" style="--d:.05s"><span class="pillar__icon">💗</span><h3>Regulación emocional</h3></div>
+        <div class="pillar reveal" style="--d:.1s"><span class="pillar__icon">🥗</span><h3>Alimentación consciente</h3></div>
+        <div class="pillar reveal" style="--d:.15s"><span class="pillar__icon">🌙</span><h3>Descanso reparador</h3></div>
+        <div class="pillar reveal" style="--d:.2s"><span class="pillar__icon">🧘</span><h3>Movimiento suave</h3></div>
+        <div class="pillar reveal" style="--d:.25s"><span class="pillar__icon">🌸</span><h3>Terapias complementarias</h3></div>
+        <div class="pillar reveal" style="--d:.3s"><span class="pillar__icon">🤍</span><h3>Acompañamiento profesional</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 9 · COMPARATIVA                                       -->
+  <!-- ============================================================= -->
+  <section class="compare">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Vista rápida</span>
+        <h2 class="section-title">Compara y elige según tu necesidad</h2>
+      </div>
+
+      <div class="comparison-table reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Enfoque principal</th>
+              <th>Ideal para</th>
+              <th>Cápsulas</th>
+              <th>Precio</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Producto">RelaxaPlus</td>
+              <td data-label="Enfoque">Estrés y ansiedad</td>
+              <td data-label="Ideal para">Tensión diaria y carga mental</td>
+              <td data-label="Cápsulas">60</td>
+              <td data-label="Precio"><span class="t-before">S/ 180</span> S/ 130</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="relaxaplus">Agregar</button></td>
+            </tr>
+            <tr>
+              <td data-label="Producto">Citrato de Magnesio</td>
+              <td data-label="Enfoque">Energía y sistema nervioso</td>
+              <td data-label="Ideal para">Cansancio y apoyo muscular</td>
+              <td data-label="Cápsulas">120</td>
+              <td data-label="Precio"><span class="t-before">S/ 140</span> S/ 100</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="citrato">Agregar</button></td>
+            </tr>
+            <tr>
+              <td data-label="Producto">Dormicalm</td>
+              <td data-label="Enfoque">Sueño y descanso</td>
+              <td data-label="Ideal para">Rutina nocturna y fatiga</td>
+              <td data-label="Cápsulas">60</td>
+              <td data-label="Precio"><span class="t-before">S/ 150</span> S/ 110</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="dormicalm">Agregar</button></td>
+            </tr>
+            <tr>
+              <td data-label="Producto">VitalMind</td>
+              <td data-label="Enfoque">Memoria y concentración</td>
+              <td data-label="Ideal para">Estudio, trabajo y enfoque</td>
+              <td data-label="Cápsulas">60</td>
+              <td data-label="Precio"><span class="t-before">S/ 180</span> S/ 130</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="vitalmind">Agregar</button></td>
+            </tr>
+            <tr>
+              <td data-label="Producto">Ashwagandha</td>
+              <td data-label="Enfoque">Estrés, cortisol y energía</td>
+              <td data-label="Ideal para">Equilibrio emocional</td>
+              <td data-label="Cápsulas">90</td>
+              <td data-label="Precio"><span class="t-before">S/ 150</span> S/ 110</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="ashwagandha">Agregar</button></td>
+            </tr>
+            <tr>
+              <td data-label="Producto">ArtiForte+</td>
+              <td data-label="Enfoque">Articulaciones y huesos</td>
+              <td data-label="Ideal para">Movilidad y vida activa</td>
+              <td data-label="Cápsulas">90</td>
+              <td data-label="Precio"><span class="t-before">S/ 150</span> S/ 110</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="artiforte">Agregar</button></td>
+            </tr>
+            <tr>
+              <td data-label="Producto">TiroidBalance</td>
+              <td data-label="Enfoque">Energía y equilibrio hormonal</td>
+              <td data-label="Ideal para">Metabolismo y ánimo</td>
+              <td data-label="Cápsulas">60</td>
+              <td data-label="Precio"><span class="t-before">S/ 180</span> S/ 130</td>
+              <td data-label="Acción"><button class="btn btn--primary btn--xs js-add" data-id="tiroidbalance">Agregar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 10 · CÓMO COMPRAR                                     -->
+  <!-- ============================================================= -->
+  <section class="steps">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Sencillo y cercano</span>
+        <h2 class="section-title">Comprar es muy sencillo</h2>
+      </div>
+
+      <div class="steps__grid">
+        <div class="step reveal"><span class="step__num">1</span><span class="step__icon">🧴</span><p>Elige tu suplemento.</p></div>
+        <div class="step reveal" style="--d:.08s"><span class="step__num">2</span><span class="step__icon">💬</span><p>Escríbeme por WhatsApp.</p></div>
+        <div class="step reveal" style="--d:.16s"><span class="step__num">3</span><span class="step__icon">🌿</span><p>Recibe orientación personalizada.</p></div>
+        <div class="step reveal" style="--d:.24s"><span class="step__num">4</span><span class="step__icon">✅</span><p>Confirma tu pedido.</p></div>
+        <div class="step reveal" style="--d:.32s"><span class="step__num">5</span><span class="step__icon">📦</span><p>Coordina entrega o envío.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 11 · TESTIMONIOS (CARRUSEL)                           -->
+  <!-- ============================================================= -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Experiencias</span>
+        <h2 class="section-title">Acompañamiento que se siente</h2>
+      </div>
+
+      <div class="carousel reveal" id="carousel">
+        <div class="carousel__track" id="carouselTrack">
+          <figure class="testimonial-card">
+            <p>"Me gustó recibir orientación antes de elegir. Sentí que no era solo comprar por comprar, sino entender qué necesitaba dentro de mi rutina."</p>
+            <figcaption>— Clienta del consultorio</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <p>"Empecé a acompañar mi descanso con mejores hábitos nocturnos y un suplemento recomendado. Me sentí más ordenada con mi autocuidado."</p>
+            <figcaption>— Clienta del consultorio</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <p>"Me ayudó tener una guía clara para elegir entre opciones de energía, sueño y estrés."</p>
+            <figcaption>— Clienta del consultorio</figcaption>
+          </figure>
+        </div>
+        <div class="carousel__controls">
+          <button class="carousel__btn" id="prevBtn" aria-label="Anterior">‹</button>
+          <div class="carousel__dots" id="carouselDots"></div>
+          <button class="carousel__btn" id="nextBtn" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 12 · SOBRE MÍ                                         -->
+  <!-- ============================================================= -->
+  <section class="about">
+    <div class="container about__inner">
+      <div class="about__media reveal">
+        <div class="about__photo">
+          <span>🌿</span>
+          <small>Tu espacio para una foto profesional</small>
+        </div>
+      </div>
+      <div class="about__content reveal" style="--d:.1s">
+        <span class="eyebrow">Sobre mí</span>
+        <h2 class="section-title section-title--left">Acompañamiento desde la psicología holística</h2>
+        <p>
+          Soy psicóloga holística y acompaño procesos de bienestar emocional desde una mirada integral.
+          Mi trabajo une herramientas de regulación emocional, respiración consciente, terapias
+          complementarias, hábitos saludables y orientación personalizada para que cada persona pueda
+          elegir de forma más consciente lo que necesita.
+        </p>
+        <p class="about__secondary">
+          Mi propósito no es venderte cualquier producto, sino ayudarte a encontrar el apoyo que mejor
+          conecte con tu momento actual.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 13 · FAQ (ACORDEÓN)                                   -->
+  <!-- ============================================================= -->
+  <section class="faq" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Preguntas frecuentes</span>
+        <h2 class="section-title">Resolvemos tus dudas</h2>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Estos suplementos reemplazan una terapia psicológica?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>No. Son productos de apoyo complementario y no reemplazan terapia psicológica, evaluación médica ni tratamiento profesional.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Puedo tomarlos si uso medicamentos?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Si tomas medicamentos, tienes una condición médica, estás embarazada o lactando, lo recomendable es consultar primero con un profesional de salud.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Cuál me recomiendas para estrés?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>RelaxaPlus y Ashwagandha están orientados al apoyo del equilibrio emocional y respuesta al estrés. La elección depende de tu caso y rutina.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Cuál me recomiendas para dormir?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Dormicalm está orientado al descanso y rutina nocturna. Ashwagandha también puede apoyar el equilibrio ante el estrés que afecta el descanso.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Cuál me recomiendas para energía?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Citrato de Magnesio puede apoyar la producción de energía y el sistema nervioso. VitalMind también puede acompañar la claridad mental.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Cuál es para concentración?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>VitalMind está orientado a memoria, concentración y rendimiento intelectual.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Cómo compro?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Solo presiona el botón de WhatsApp, dime qué producto te interesa y coordinamos la compra.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Puedo pedir orientación antes de comprar?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Sí. Puedes escribirme para recibir una orientación inicial según lo que estás buscando: descanso, estrés, energía, memoria o bienestar emocional.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿Hacen envíos?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Sí, coordinamos entrega o envío según tu ubicación.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-item__q">¿En cuánto tiempo se ven resultados?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__a"><p>Cada persona es diferente. Los suplementos deben acompañarse de hábitos saludables, descanso, alimentación consciente y orientación adecuada.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 14 · CTA FINAL                                        -->
+  <!-- ============================================================= -->
+  <section class="cta">
+    <div class="blob blob--3"></div>
+    <div class="container cta__inner reveal">
+      <h2 class="cta__title">Empieza hoy a cuidar tu equilibrio desde adentro</h2>
+      <p class="cta__sub">Te acompaño a elegir el suplemento que mejor se adapte a tu momento actual.</p>
+      <a href="https://wa.me/51947720840?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20los%20suplementos%20naturales%20y%20orientaci%C3%B3n%20para%20elegir%20el%20m%C3%A1s%20adecuado%20para%20m%C3%AD." target="_blank" rel="noopener" class="btn btn--primary btn--lg btn--glow">Comprar o consultar por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SECCIÓN 15 · AVISO LEGAL / FOOTER                             -->
+  <!-- ============================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <span class="brand__mark">sana<span>escencia</span></span>
+        <p>Psicología &amp; Terapias Complementarias</p>
+      </div>
+      <p class="footer__legal">
+        Los suplementos son productos de apoyo complementario y no reemplazan una consulta médica,
+        psicológica ni tratamiento profesional. Si estás embarazada, lactando, tienes una condición
+        médica o tomas medicamentos, consulta con un profesional de salud antes de consumirlos. La
+        información de esta página tiene fines informativos y de bienestar general.
+      </p>
+      <p class="footer__copy">© <span id="year"></span> sanaescencia · Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================= -->
+  <!-- CARRITO DE COMPRAS (drawer)                                    -->
+  <!-- ============================================================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart" id="cart" aria-label="Carrito de compras">
+    <div class="cart__head">
+      <h3>Tu pedido</h3>
+      <button class="cart__close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+    </div>
+
+    <div class="cart__items" id="cartItems">
+      <!-- items generados por JS -->
+    </div>
+
+    <p class="cart__empty" id="cartEmpty">Tu carrito está vacío. Agrega los suplementos que quieras y se sumarán a tu pedido por WhatsApp.</p>
+
+    <div class="cart__foot">
+      <div class="cart__total">
+        <span>Total</span>
+        <strong id="cartTotal">S/ 0</strong>
+      </div>
+      <a class="btn btn--primary btn--block btn--lg" id="cartCheckout" href="#" target="_blank" rel="noopener">Finalizar pedido por WhatsApp</a>
+      <button class="cart__clear" id="cartClear">Vaciar carrito</button>
+      <p class="cart__note">Te responderé para confirmar disponibilidad, envío y darte orientación.</p>
+    </div>
+  </aside>
+
+  <!-- ===== Botón flotante de WhatsApp ===== -->
+  <a class="whatsapp-float" href="https://wa.me/51947720840?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20los%20suplementos%20naturales%20y%20orientaci%C3%B3n%20para%20elegir%20el%20m%C3%A1s%20adecuado%20para%20m%C3%AD." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16.004 0C7.164 0 0 7.163 0 16c0 2.82.738 5.564 2.142 7.984L0 32l8.207-2.137A15.93 15.93 0 0016.004 32C24.84 32 32 24.837 32 16S24.84 0 16.004 0zm0 29.2c-2.5 0-4.946-.67-7.085-1.94l-.508-.3-4.873 1.268 1.3-4.747-.33-.523A13.13 13.13 0 012.8 16C2.8 8.71 8.713 2.8 16.004 2.8 23.29 2.8 29.2 8.71 29.2 16s-5.91 13.2-13.196 13.2zm7.24-9.88c-.397-.198-2.348-1.158-2.712-1.29-.363-.132-.628-.198-.892.198-.265.397-1.024 1.29-1.255 1.555-.231.265-.463.298-.86.1-.397-.199-1.676-.618-3.193-1.97-1.18-1.052-1.977-2.352-2.208-2.75-.231-.397-.025-.612.174-.81.18-.178.397-.463.595-.694.198-.232.264-.397.397-.662.132-.265.066-.497-.033-.695-.1-.198-.892-2.15-1.222-2.945-.322-.773-.65-.668-.892-.68l-.76-.014c-.264 0-.694.099-1.058.497-.363.397-1.387 1.355-1.387 3.307s1.42 3.836 1.618 4.101c.198.265 2.795 4.27 6.772 5.987.946.408 1.684.652 2.26.834.95.302 1.814.26 2.498.158.762-.114 2.348-.96 2.679-1.887.33-.926.33-1.72.231-1.886-.099-.165-.363-.265-.76-.463z"/>
+    </svg>
+    <span class="whatsapp-float__label">WhatsApp</span>
+  </a>
+
+  <script src="catalog-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

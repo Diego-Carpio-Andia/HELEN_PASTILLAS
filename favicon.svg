@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#355E3B"/>
+      <stop offset="1" stop-color="#8FAF8A"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAF8F3"/>
+      <stop offset="1" stop-color="#EDE3D2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fondo redondeado -->
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="url(#bg)"/>
+
+  <!-- hoja principal -->
+  <path d="M32 12
+           C20 18 16 30 18 44
+           C30 44 42 38 44 22
+           C40 26 34 28 28 30
+           C34 26 38 20 40 14
+           C37 14 34 13 32 12 Z"
+        fill="url(#leaf)"/>
+
+  <!-- nervadura -->
+  <path d="M20 42 C26 32 34 24 42 18"
+        fill="none" stroke="#C8A96A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- tallo / brote dorado -->
+  <circle cx="44" cy="44" r="4" fill="#C8A96A"/>
+</svg>
