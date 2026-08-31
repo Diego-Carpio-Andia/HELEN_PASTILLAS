@@ -2,7 +2,7 @@
 window.CATEGORIES = ["Defensas e inmunidad","Energía y vitalidad","Cerebro y concentración","Huesos y músculos","Sueño y calma","Digestión"];
 
 (function () {
-  var PRICE = 45, ANTES = 65;
+  var PRICE = 55, ANTES = 75;
   function p(id, name, cat, desc) {
     return { id: id, name: name, line: "Gomitas sanaescencia", cat: cat,
              price: PRICE, antes: ANTES, content: "60 gomitas", desc: desc, img: "img/" + id + ".jpg" };
