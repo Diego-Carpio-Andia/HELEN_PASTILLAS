@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#355E3B"/>
-      <stop offset="1" stop-color="#8FAF8A"/>
+      <stop offset="0" stop-color="#293c2c"/>
+      <stop offset="1" stop-color="#425638"/>
     </linearGradient>
     <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FAF8F3"/>
-      <stop offset="1" stop-color="#EDE3D2"/>
+      <stop offset="1" stop-color="#edf0df"/>
     </linearGradient>
   </defs>
 
@@ -24,8 +24,8 @@
 
   <!-- nervadura -->
   <path d="M20 42 C26 32 34 24 42 18"
-        fill="none" stroke="#C8A96A" stroke-width="2" stroke-linecap="round"/>
+        fill="none" stroke="#d6df8c" stroke-width="2" stroke-linecap="round"/>
 
   <!-- tallo / brote dorado -->
-  <circle cx="44" cy="44" r="4" fill="#C8A96A"/>
+  <circle cx="44" cy="44" r="4" fill="#d6df8c"/>
 </svg>
