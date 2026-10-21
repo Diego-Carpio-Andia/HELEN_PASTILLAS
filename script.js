@@ -12,14 +12,15 @@
     { id:'tiroidbalance', name:'TiroidBalance', price:130, content:'60 cápsulas', focus:'Elección con orientación', desc:'Consulta la composición de TiroidBalance con un profesional de salud antes de consumirlo, especialmente si tienes una condición tiroidea. No sustituye un tratamiento indicado.' }
   ].map(p => ({ ...p, img:'img/' + p.id + '.webp', line:'Selección en cápsulas' }));
   const CATALOG = window.CATALOG || [];
-  const PRODUCTS = new Map([...CAPSULES, ...CATALOG].map(p => [p.id, p]));
+  const AROMAS = window.AROMAS || [];
+  const PRODUCTS = new Map([...CAPSULES, ...CATALOG, ...AROMAS].map(p => [p.id, p]));
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const money = value => 'S/ ' + value.toLocaleString('es-PE');
   const wa = message => 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message);
   function card(p, gummy = false, extra = false) {
     const name = esc(p.name), id = esc(p.id);
-    return `<article class="product-card${extra ? ' product-card--extra' : ''}"${extra ? ' hidden' : ''} data-id="${id}"><button class="product-card__media js-detail" data-id="${id}" aria-label="Ver detalles de ${name}"><img src="${esc(p.img)}" alt="${name}, ${esc(p.content)}" width="720" height="${gummy ? '720' : '960'}" loading="lazy" decoding="async"><span class="product-card__tag">${esc(p.content)}</span><span class="product-card__view" aria-hidden="true">↗</span></button><div class="product-card__body"><span class="product-card__line">${esc(gummy ? p.cat : p.focus)}</span><h3 class="product-card__name"><button class="js-detail" data-id="${id}">${name}</button></h3><p class="product-card__desc">${gummy ? esc(p.summary || 'Presentación en gomitas.') : esc(p.content) + ' · Selección sanaescencia'}</p><div class="product-card__buy"><span class="price-now">${money(p.price)}</span><button class="add-button js-add" data-id="${id}" aria-label="Agregar ${name} a mi pedido">Agregar <span aria-hidden="true">+</span></button></div></div></article>`;
+    return `<article class="product-card${extra ? ' product-card--extra' : ''}"${extra ? ' hidden' : ''} data-id="${id}"><button class="product-card__media js-detail" data-id="${id}" aria-label="Ver detalles de ${name}"><img src="${esc(p.img)}" alt="${name}, ${esc(p.content)}" width="720" height="${gummy ? '720' : '960'}" loading="lazy" decoding="async"><span class="product-card__tag">${esc(p.content)}</span><span class="product-card__view" aria-hidden="true">↗</span></button><div class="product-card__body"><span class="product-card__line">${esc(gummy ? p.cat : p.focus)}</span><h3 class="product-card__name"><button class="js-detail" data-id="${id}">${name}</button></h3><p class="product-card__desc">${p.summary ? esc(p.summary) : esc(p.content) + ' · Selección sanaescencia'}</p><div class="product-card__buy"><span class="price-now">${money(p.price)}</span><button class="add-button js-add" data-id="${id}" aria-label="Agregar ${name} a mi pedido">Agregar <span aria-hidden="true">+</span></button></div></div></article>`;
   }
   $('productsGrid').innerHTML = CAPSULES.map((p,i) => card(p,false,i>3)).join('');
   $('compareBody').innerHTML = CAPSULES.map(p => `<tr><th scope="row">${esc(p.name)}</th><td>${esc(p.content)}</td><td>${money(p.price)}</td><td><button class="add-button js-add" data-id="${esc(p.id)}" aria-label="Agregar ${esc(p.name)} a mi pedido">Agregar <span aria-hidden="true">+</span></button></td></tr>`).join('');
@@ -42,6 +43,18 @@
     renderCatalog(button.dataset.cat);
   });
   renderCatalog();
+  function renderAromas(category='Todas') {
+    const list = category==='Todas' ? AROMAS : AROMAS.filter(p=>p.cat===category);
+    $('aromaGrid').innerHTML=list.map(p=>card(p)).join('');
+    $('aromaCount').textContent=`${list.length} ${list.length===1?'aroma':'aromas'} · Esencias de 10 ml: S/ 35 · Home Spray de 120 ml: S/ 45`;
+  }
+  $('aromaFilters').addEventListener('click',event=>{
+    const button=event.target.closest('[data-aroma]'); if(!button)return;
+    $('aromaFilters').querySelectorAll('button').forEach(el=>{el.classList.toggle('active',el===button);el.setAttribute('aria-pressed',String(el===button));});
+    renderAromas(button.dataset.aroma);
+  });
+  renderAromas();
+
   // Native dialogs provide Escape, background inertness and keyboard focus containment.
   const returnFocus = new WeakMap();
   function openDialog(dialog) { if(dialog.open)return; returnFocus.set(dialog,document.activeElement); dialog.showModal(); }
@@ -56,8 +69,8 @@
     $('viewerLine').textContent=p.line; $('viewerFocus').textContent=p.focus||p.cat; $('viewerDesc').textContent=p.desc;
     $('viewerList').innerHTML=`<li>${esc(p.content)} por frasco.</li><li>Disponibilidad y entrega a confirmar por WhatsApp.</li>`;
     $('viewerNow').textContent=money(p.price); $('viewerAdd').dataset.id=id;
-    $('viewerWa').href=wa(`Hola, quisiera consultar sobre ${p.name} (${p.content}, ${money(p.price)}). ¿Me pueden compartir la composición, el etiquetado y las precauciones antes de elegir?`);
-    $('viewerTabs').hidden=id.startsWith('g_');
+    $('viewerWa').href=wa(`Hola, quisiera consultar sobre ${p.name} (${p.content}, ${money(p.price)}). ¿Me pueden confirmar los formatos disponibles y compartir la composición, el etiquetado y las precauciones antes de elegir?`);
+    $('viewerTabs').hidden=!CAPSULES.some(item=>item.id===id);
     $('viewerTabs').innerHTML=CAPSULES.map(item=>`<button class="viewer__tab${item.id===id?' is-active':''}" data-product="${item.id}" aria-pressed="${item.id===id}">${esc(item.name)}</button>`).join('');
   }
   $('viewerTabs').addEventListener('click',event=>{ const button=event.target.closest('[data-product]'); if(!button)return; const id=button.dataset.product; renderViewer(id); $('viewerTabs').querySelector(`[data-product="${id}"]`).focus(); });

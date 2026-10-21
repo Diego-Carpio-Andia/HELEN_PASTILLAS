@@ -1,6 +1,6 @@
 # sanaescencia
 
-Sitio estático de suplementos y gomitas. Catálogo de 18 productos y pedidos por WhatsApp al +51 947 720 840.
+Sitio estático de suplementos y gomitas. Catálogo de 28 productos y pedidos por WhatsApp al +51 947 720 840.
 
 ## Vista local
 
@@ -9,7 +9,9 @@ En esta carpeta, ejecutar `python -m http.server 5173 --bind 127.0.0.1` y abrir 
 ## Actualizar el catálogo
 
 - Cápsulas: arreglo `CAPSULES` de `script.js`.
-- Gomitas: `catalog-data.js`.
+- Gomitas y aromaterapia: `catalog-data.js` (arreglo `AROMAS`).
+- Aromaterapia: 4 esencias de 10 ml a S/ 35 y 6 Home Spray de 120 ml a S/ 45. Las esencias se presentan en roll-on o gotero, con formato a confirmar por WhatsApp.
+- Las 12 fotografías suministradas se conservan completas en `img/*.jpeg`; 10 fichas individuales y 2 imágenes de colección.
 - Identidad y adaptación a pantallas: `styles.css`.
 - Contenido: `index.html`.
 - Imágenes optimizadas: `img/*.webp`; se conservaron los originales.
