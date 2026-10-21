@@ -1,6 +1,6 @@
 # sanaescencia
 
-Sitio estático de suplementos y gomitas. Catálogo de 28 productos y pedidos por WhatsApp al +51 947 720 840.
+Sitio estático de suplementos y gomitas. Catálogo de 26 productos y pedidos por WhatsApp al +51 947 720 840.
 
 ## Vista local
 
@@ -31,3 +31,5 @@ Las tres fotografías editoriales son imágenes ilustrativas generadas con la he
 Información general de uso responsable: [NCCIH — Using Dietary Supplements Wisely](https://www.nccih.nih.gov/health/using-dietary-supplements-wisely). La web no recomienda dosis ni diagnostica.
 
 Para medir un aumento real de conversión será necesario comparar visitas y pedidos; este rediseño no constituye evidencia de un incremento de ventas.
+
+El catálogo de cápsulas contiene RelaxaPlus (60 cápsulas, S/ 130), Ashwagandha, Dormicalm, Citrato de Magnesio (120 cápsulas, S/ 90) y VitalMind. Se corrigió la ficha duplicada de RelaxaPlus que aparecía como ArtiForte+ y se retiró TiroidBalance.

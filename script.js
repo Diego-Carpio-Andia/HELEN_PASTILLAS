@@ -6,10 +6,8 @@
     { id:'relaxaplus', name:'RelaxaPlus', price:130, content:'60 cápsulas', focus:'Tu momento de calma', desc:'Conoce esta presentación de nuestra selección para tu rutina de bienestar.' },
     { id:'ashwagandha', name:'Ashwagandha', price:110, content:'90 cápsulas', focus:'Tu pausa diaria', desc:'Ashwagandha en cápsulas. Solicita la composición completa y las precauciones de esta presentación.' },
     { id:'dormicalm', name:'Dormicalm', price:110, content:'60 cápsulas', focus:'Tu ritual de noche', desc:'Una presentación de nuestra selección para conocer dentro de tu rutina nocturna. Consulta si es adecuada para ti.' },
-    { id:'citrato', name:'Citrato de Magnesio', price:100, content:'120 cápsulas', focus:'Tu rutina de bienestar', desc:'Citrato de magnesio en cápsulas. Consulta el etiquetado y la cantidad de magnesio por porción antes de elegir.' },
+    { id:'citrato', name:'Citrato de Magnesio', price:90, content:'120 cápsulas', focus:'Tu rutina de bienestar', desc:'Citrato de magnesio en cápsulas. Consulta el etiquetado y la cantidad de magnesio por porción antes de elegir.' },
     { id:'vitalmind', name:'VitalMind', price:130, content:'60 cápsulas', focus:'Tu espacio de enfoque', desc:'Conoce los ingredientes de VitalMind y resuelve tus dudas sobre esta presentación antes de comprar.' },
-    { id:'artiforte', name:'ArtiForte+', price:110, content:'90 cápsulas', focus:'Tu bienestar físico', desc:'Conoce la presentación de ArtiForte+ y consulta su composición, modo de uso y precauciones.' },
-    { id:'tiroidbalance', name:'TiroidBalance', price:130, content:'60 cápsulas', focus:'Elección con orientación', desc:'Consulta la composición de TiroidBalance con un profesional de salud antes de consumirlo, especialmente si tienes una condición tiroidea. No sustituye un tratamiento indicado.' }
   ].map(p => ({ ...p, img:'img/' + p.id + '.webp', line:'Selección en cápsulas' }));
   const CATALOG = window.CATALOG || [];
   const AROMAS = window.AROMAS || [];
@@ -28,7 +26,7 @@
     const expanded = $('showProducts').getAttribute('aria-expanded') !== 'true';
     document.querySelectorAll('.product-card--extra').forEach(el => { el.hidden = !expanded; });
     $('showProducts').setAttribute('aria-expanded',String(expanded));
-    $('showProducts').innerHTML = expanded ? 'Ver menos cápsulas <span aria-hidden="true">↑</span>' : 'Ver las 7 cápsulas <span aria-hidden="true">↓</span>';
+    $('showProducts').innerHTML = expanded ? 'Ver menos cápsulas <span aria-hidden="true">↑</span>' : `Ver las ${CAPSULES.length} cápsulas <span aria-hidden="true">↓</span>`;
   });
   const categories = ['Todas',...(window.CATEGORIES || [])];
   $('catalogFilters').innerHTML = categories.map((c,i) => `<button class="cat-chip${i===0?' active':''}" data-cat="${esc(c)}" aria-pressed="${i===0}">${esc(c)}</button>`).join('');
