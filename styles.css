@@ -48,5 +48,3 @@ dialog{border:0;padding:0;color:var(--ink);background:var(--cream)}dialog::backd
 .aromas{background:#eeeee3}.aromas__grid .product-card__media{aspect-ratio:2/3}.aromas__grid .product-card__media img{width:100%;height:100%;object-fit:contain}.aromas__grid .product-card__tag{top:auto;bottom:12px}.aromas__grid .product-card__buy{flex-wrap:wrap}.aroma-collection__images{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-top:24px;align-items:start}.aroma-collection__images img{width:100%;height:auto;display:block}.aromas__grid .product-card__name{min-height:2.2em}
 @media(max-width:760px){.aroma-collection__images{grid-template-columns:1fr}.aromas__grid .product-card__tag{bottom:8px}.aromas__grid .product-card__name{font-size:24px}}
 
-/* Fichas suministradas: mostrar la imagen completa sin recortarla. */
-.product-card[data-id="inflamout"] .product-card__media img,.product-card[data-id="artiforte"] .product-card__media img{object-fit:contain;background:#fff}

@@ -8,8 +8,8 @@
     { id:'dormicalm', name:'Dormicalm', price:110, content:'60 cápsulas', focus:'Tu ritual de noche', desc:'Una presentación de nuestra selección para conocer dentro de tu rutina nocturna. Consulta si es adecuada para ti.' },
     { id:'citrato', name:'Citrato de Magnesio', price:90, content:'120 cápsulas', focus:'Tu rutina de bienestar', desc:'Citrato de magnesio en cápsulas. Consulta el etiquetado y la cantidad de magnesio por porción antes de elegir.' },
     { id:'vitalmind', name:'VitalMind', price:130, content:'60 cápsulas', focus:'Tu espacio de enfoque', desc:'Conoce los ingredientes de VitalMind y resuelve tus dudas sobre esta presentación antes de comprar.' },
-    { id:'inflamout', name:'Inflamout', price:90, content:'120 cápsulas', focus:'Tu rutina de bienestar', desc:'Presentación con curcumina, jengibre, canela y pimienta negra. Solicita el etiquetado completo, el modo de uso y las precauciones antes de elegir.', img:'img/inflamout.jpeg' },
-    { id:'artiforte', name:'ArtiForte+', price:120, content:'90 cápsulas', focus:'Tu bienestar físico', desc:'Presentación con glucosamina, condroitina, MSM, colágeno hidrolizado, curcumina, ácido hialurónico y vitamina D3. Consulta la composición completa y las precauciones antes de elegir.', img:'img/artiforte.jpeg' },
+    { id:'inflamout', name:'Inflamout', price:90, content:'120 cápsulas', focus:'Tu rutina de bienestar', desc:'Presentación con curcumina, jengibre, canela y pimienta negra. Solicita el etiquetado completo, el modo de uso y las precauciones antes de elegir.', img:'img/inflamout-foto.png' },
+    { id:'artiforte', name:'ArtiForte+', price:120, content:'90 cápsulas', focus:'Tu bienestar físico', desc:'Presentación con glucosamina, condroitina, MSM, colágeno hidrolizado, curcumina, ácido hialurónico y vitamina D3. Consulta la composición completa y las precauciones antes de elegir.', img:'img/artiforte-foto.png' },
   ].map(p => ({ ...p, img:p.img || 'img/' + p.id + '.webp', line:'Selección en cápsulas' }));
   const CATALOG = window.CATALOG || [];
   const AROMAS = window.AROMAS || [];

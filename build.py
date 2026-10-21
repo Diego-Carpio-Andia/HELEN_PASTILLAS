@@ -28,8 +28,8 @@ page.feed((ROOT / 'index.html').read_text(encoding='utf-8'))
 assert len(page.ids) == len(set(page.ids)), 'Duplicate page IDs'
 assert all(anchor in page.ids for anchor in page.anchors), 'Broken internal link'
 assert all((ROOT / asset).is_file() for asset in page.assets), 'Missing page asset'
-images = sorted(p for p in (ROOT / 'img').iterdir() if p.suffix.lower() in {'.webp', '.jpeg'})
-assert len(images) == 33, 'Expected 28 product images, 3 editorial images and 2 collection images'
+images = sorted(p for p in (ROOT / 'img').iterdir() if p.suffix.lower() in {'.webp', '.jpeg', '.png'})
+assert len(images) == 35, 'Expected 28 product photos, 2 source sheets, 3 editorial images and 2 collection images'
 hosting = json.loads((ROOT / '.openai' / 'hosting.json').read_text(encoding='utf-8-sig'))
 assert hosting.get('static', {}).get('directory') == 'dist'
 OUT.mkdir(exist_ok=True)

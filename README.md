@@ -33,3 +33,5 @@ Información general de uso responsable: [NCCIH — Using Dietary Supplements Wi
 Para medir un aumento real de conversión será necesario comparar visitas y pedidos; este rediseño no constituye evidencia de un incremento de ventas.
 
 El catálogo de cápsulas contiene RelaxaPlus (60 cápsulas, S/ 130), Ashwagandha (90 cápsulas, S/ 110), Dormicalm, Citrato de Magnesio (120 cápsulas, S/ 90), VitalMind, Inflamout (120 cápsulas, S/ 90) y ArtiForte+ (90 cápsulas, S/ 120). Inflamout y ArtiForte+ utilizan sus propias imágenes suministradas. TiroidBalance permanece retirado.
+
+Las fotos de catálogo de Inflamout y ArtiForte+ fueron generadas a partir de sus fichas, con el estilo visual de VitalMind. Las fichas originales se conservan como referencia en img/.
